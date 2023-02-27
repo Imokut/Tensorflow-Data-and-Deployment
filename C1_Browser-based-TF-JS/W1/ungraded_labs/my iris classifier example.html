@@ -43,6 +43,7 @@
                 loss: "categoricalCrossentropy",
                 optimizer: tf.train.adam(0.06)
             })
+            model.summary();
 
             await model.fitDataset(
                 convertedData,
